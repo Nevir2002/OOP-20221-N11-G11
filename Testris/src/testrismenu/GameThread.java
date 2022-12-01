@@ -1,6 +1,7 @@
 package testrismenu;
 
 //@author Nevir2002
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -106,6 +107,11 @@ public class GameThread extends Thread{
                 game.setGameOver(true);
                 game.REPAINT();
                 System.out.println("Game over.");
+                
+                ReadyPanel.setVisible(true);
+                ReadyLabel.setFont(new Font("Arial", Font.BOLD, 44));
+                ReadyLabel.setText("GAME OVER");
+                
 
             }else{
                 
